@@ -1,0 +1,34 @@
+#site_content {
+    .covers_section{
+        margin-top: 60px;
+        padding-top: 60px;
+        padding: 20px;
+        background-color: #141922;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: calc(100% - 300px);
+    }
+    .border{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            width: 10%;
+            background-color: #ADFF2F;
+        }
+    }
+    a{
+       
+        margin: 0 10px;
+        font-size: 0.7rem;
+        padding: 0 10px;
+        color: #7C7E83;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    nav{
+        text-align: center;
+    }
+}
