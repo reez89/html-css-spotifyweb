@@ -7,22 +7,72 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="img/spotify_icon_addressbar.png" type="image/icon type">
         <script src="https://kit.fontawesome.com/fc3e9057b4.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <title>Spotify Clone</title>
-
-        <!-- Bootstrap CSS -->
 
     </head>
     <body>
         <div class="wrapper d-flex">
 
             <main id="site_content" class="d-flex">
-                <aside class="main_menu">Side bar</aside>
+                <aside class="main_menu">
+                    <!-- logo spotify -->
+                    <div class="logo_spotify">
+                        <img src="./img/logo.svg" alt="">
+                    </div>
+                    <!-- Tab Search -->
+                    <div class="search">
+                        <div class="search_item">
+                            <a href="#" class="align_center home"><img src="./img/home.svg" alt="">Home</a> 
+                        </div>
+                    <div class="search_item">
+                        <a href="#" class="align_center"><img src="./img/search.svg" alt="">Cerca</a> 
+                    </div>
+                    <div class="search_item">
+                        <a href="#" class="align_center"><img src="./img/libreria.svg" alt="">La tua libreria</a> 
+                    </div>                
+                    </div>
+                    
+                    <div class="group">
+                        <!-- Tab playlist -->
+                        <div class="playlist">
+                            <h5 class="plasylist_header_txt">Playlist</h5>
+                            <div class="crea_playlist">
+                                <a href="#"><i class="fas fa-plus plus_icon"></i> Crea Playlist</a>
+                            </div>
+                            <ul>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
+    
+                        <!-- Tab Installa app -->
+                        <div class="installa_app">
+                            <div class="installa">
+                                <p>Installa app</p>
+                            </div>
+                            <hr class="hr_style">
+                            <div class="john_doe">
+                                <a href=""><img src="./img/profile.svg" alt=""> John Doe</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </aside>
+
+                <!-- Sezione Centrale -->
                 <section class="covers_section">
+                    <!-- Efettua Upgrade -->
                     <div class="subscribe">
                         <button type="button" class="btn_subscribe">Effettua l'upgrade</button>
                     </div>   
                     
-                    
+                    <!-- Links -->
                     <nav>
                         <div class="links" >
                             <a href="#" class="border">in evidenza</a>                       
@@ -46,6 +96,7 @@
                     </nav>
                     <h2 class="recently_played_txt">Recently played</h2>
 
+                    <!-- Card Immagini -->
                     <div id="recent_played" class="d-flex">
                         <div class="item">
                             <div class="hover">

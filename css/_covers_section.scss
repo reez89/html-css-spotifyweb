@@ -1,6 +1,5 @@
 #site_content {
     .covers_section{
-        margin-top: 60px;
         padding-top: 60px;
         padding: 20px;
         background-color: #141922;
@@ -28,19 +27,20 @@
             display: block;
         }
     }
-    a{  
-        text-transform: uppercase;
-        padding-bottom: 10px;
-        font-size: 0.65rem;
-        padding: 0 10px;
-        color: #7C7E83;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
     nav{
         text-align: center;
+        a {
+            @include linkStyle();
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            font-size: 0.7rem;
+            padding: 0 10px;
+            text-transform: uppercase;
+        }
     }
     .recently_played_txt{
         padding: 15px 0;
     }
+
 }

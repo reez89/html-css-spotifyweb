@@ -1,7 +1,9 @@
 #recent_played {
     z-index: 1;
     flex-wrap: wrap;
+
     .item {
+        z-index: 1;
         margin: 10px 10px;
         position: relative;
         width: auto;
