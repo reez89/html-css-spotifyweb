@@ -1,9 +1,47 @@
 #recent_played {
+    z-index: 1;
     flex-wrap: wrap;
     .item {
-        width: 200px;
-        height: 200px;
-        background-color: black;
-        
+        margin: 10px 10px;
+        position: relative;
+        width: auto;
+        height: 100%;
+        text-align: center;
     }
+    
+    .hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 170px !important;
+        width: 100% !important;
+    }
+    .hover:hover{    
+        opacity: 1;
+    }
+
+    .play_btn{
+        position: absolute;
+        font-size: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-in-out;
+
+    }
+    img{
+        width: 170px;
+    }
+    .img_title {
+        padding: 10px ;
+    }
+    .txt_description{
+        font-size: 12px;
+    }
+
+
+
 }

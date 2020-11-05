@@ -8,21 +8,30 @@
         overflow-x: hidden;
         width: calc(100% - 300px);
     }
+    .links{
+        display: inline-block;
+    }
     .border{
         position: relative;
         &::after{
             content: '';
             position: absolute;
             bottom: 0;
-            right: 50%;
-            width: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20%;
+            height: 1px;
             background-color: #ADFF2F;
+            display: none ;
+        }
+        &:hover::after{
+            display: block;
         }
     }
-    a{
-       
-        margin: 0 10px;
-        font-size: 0.7rem;
+    a{  
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        font-size: 0.65rem;
         padding: 0 10px;
         color: #7C7E83;
         text-decoration: none;
@@ -30,5 +39,8 @@
     }
     nav{
         text-align: center;
+    }
+    .recently_played_txt{
+        padding: 15px 0;
     }
 }

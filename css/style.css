@@ -30,6 +30,10 @@ aside.main_menu {
   width: calc(100% - 300px);
 }
 
+#site_content .links {
+  display: inline-block;
+}
+
 #site_content .border {
   position: relative;
 }
@@ -38,14 +42,23 @@ aside.main_menu {
   content: '';
   position: absolute;
   bottom: 0;
-  right: 50%;
-  width: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20%;
+  height: 1px;
   background-color: #ADFF2F;
+  display: none;
+}
+
+#site_content .border:hover::after {
+  display: block;
 }
 
 #site_content a {
-  margin: 0 10px;
-  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 0.65rem;
   padding: 0 10px;
   color: #7C7E83;
   text-decoration: none;
@@ -56,20 +69,66 @@ aside.main_menu {
   text-align: center;
 }
 
+#site_content .recently_played_txt {
+  padding: 15px 0;
+}
+
 footer {
   background-color: greenyellow;
   height: 60px;
 }
 
 #recent_played {
+  z-index: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #recent_played .item {
-  width: 200px;
-  height: 200px;
-  background-color: black;
+  margin: 10px 10px;
+  position: relative;
+  width: auto;
+  height: 100%;
+  text-align: center;
+}
+
+#recent_played .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 170px !important;
+  width: 100% !important;
+}
+
+#recent_played .hover:hover {
+  opacity: 1;
+}
+
+#recent_played .play_btn {
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#recent_played img {
+  width: 170px;
+}
+
+#recent_played .img_title {
+  padding: 10px;
+}
+
+#recent_played .txt_description {
+  font-size: 12px;
 }
 
 #site_content {
@@ -86,7 +145,7 @@ footer {
 }
 
 .subscribe {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.9);
   height: 60px;
   width: calc(100% - 300px);
   position: fixed;
