@@ -6,9 +6,16 @@
         z-index: 1;
         margin: 10px 10px;
         position: relative;
-        width: auto;
-        height: 100%;
+        width: 100px;
+        height: 100px;
         text-align: center;
+        &:hover img{    
+            border-radius: 20%;
+            transform: scale(1.5);
+            box-shadow: 0 10px 20px black;
+            z-index: 0;
+            
+        }
     }
     
     .hover{
@@ -18,11 +25,15 @@
         opacity: 0;
         transition: all 0.5s ease-in-out;
         background-color: rgba(0, 0, 0, 0.7);
-        height: 170px !important;
-        width: 100% !important;
-    }
-    .hover:hover{    
-        opacity: 1;
+        height: 100px !important;
+        width: 100px !important;
+        &:hover{
+            opacity: 1;
+            border-radius: 20%;
+            cursor: pointer;
+            transform: scale(1.5);
+            z-index: 2;
+        }
     }
 
     .play_btn{
@@ -32,10 +43,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         transition: all 0.5s ease-in-out;
+        
 
     }
     img{
-        width: 170px;
+        height: auto;
+        width: 100px;
+        transition: all 0.5s ease-in-out;
     }
     .img_title {
         padding: 10px ;

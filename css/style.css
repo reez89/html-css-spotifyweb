@@ -258,9 +258,18 @@ footer {
   z-index: 1;
   margin: 10px 10px;
   position: relative;
-  width: auto;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   text-align: center;
+}
+
+#recent_played .item:hover img {
+  border-radius: 20%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-box-shadow: 0 10px 20px black;
+          box-shadow: 0 10px 20px black;
+  z-index: 0;
 }
 
 #recent_played .hover {
@@ -271,12 +280,17 @@ footer {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 170px !important;
-  width: 100% !important;
+  height: 100px !important;
+  width: 100px !important;
 }
 
 #recent_played .hover:hover {
   opacity: 1;
+  border-radius: 20%;
+  cursor: pointer;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 2;
 }
 
 #recent_played .play_btn {
@@ -291,7 +305,10 @@ footer {
 }
 
 #recent_played img {
-  width: 170px;
+  height: auto;
+  width: 100px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #recent_played .img_title {
