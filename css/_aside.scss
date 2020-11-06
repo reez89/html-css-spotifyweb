@@ -96,20 +96,34 @@ aside.main_menu {
     }
     .installa_app{
         display: flex;
+        color: #7C7E83;
         flex-direction: column;
     }
     .hr_style{
         margin: 0 10px;
+        border-color:#7C7E83;
     }
     .installa{
         display: flex;
-        padding: 0 10px;
+        padding: 10px 10px;
+        a{
+            font-size: 12px;
+            
+        }
+        img {
+            height: 15px;
+        }
     }
     .john_doe{
         display: flex;
-        padding: 0 10px;
+        padding: 10px 10px;
+        a{
+            color: white;
+        }
         img{
-            height: 20px;
+            height: 15px;
+            background-color: #7C7E83;
+            border-radius: 50%;
         }
     }
 }

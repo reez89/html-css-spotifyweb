@@ -3,15 +3,15 @@
     flex-wrap: wrap;
     padding: 0 20px;
     .item{
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
         margin: 10px 10px;
         position: relative;
         text-align: center;
     }
     img{
-        height: 100px;
-        width: auto;
+        height: auto;
+        width: 130px;
         border-radius: 50%;
     }
 }

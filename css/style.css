@@ -10,6 +10,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body p {
+  color: #7C7E83;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,6 +166,7 @@ aside.main_menu .installa_app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #7C7E83;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -170,24 +175,39 @@ aside.main_menu .installa_app {
 
 aside.main_menu .hr_style {
   margin: 0 10px;
+  border-color: #7C7E83;
 }
 
 aside.main_menu .installa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 10px;
+  padding: 10px 10px;
+}
+
+aside.main_menu .installa a {
+  font-size: 12px;
+}
+
+aside.main_menu .installa img {
+  height: 15px;
 }
 
 aside.main_menu .john_doe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 10px;
+  padding: 10px 10px;
+}
+
+aside.main_menu .john_doe a {
+  color: white;
 }
 
 aside.main_menu .john_doe img {
-  height: 20px;
+  height: 15px;
+  background-color: #7C7E83;
+  border-radius: 50%;
 }
 
 .links {
@@ -231,8 +251,155 @@ nav a {
 }
 
 footer {
-  background-color: greenyellow;
-  height: 60px;
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .player {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .player .sidebar_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+  width: 300px;
+}
+
+footer .player .sidebar_left img {
+  display: inline;
+  height: 40px;
+}
+
+footer .player .sidebar_left .side_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer .player .sidebar_left .side_info .side_txt {
+  margin: auto auto;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+footer .player .sidebar_left .side_info .side_txt p {
+  font-size: 10px;
+}
+
+footer .player .sidebar_left .side_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer .player .sidebar_left .side_icons .heart_icon {
+  padding: 0 10px;
+}
+
+footer .central_bar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer .central_bar .icons_player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  margin: auto 0;
+}
+
+footer .central_bar .icons_player i {
+  font-size: 20px;
+  padding: 0 20px;
+  margin: auto 0;
+}
+
+footer .central_bar .icons_player .play_btn {
+  font-size: 30px;
+}
+
+footer .central_bar .loading_bar {
+  position: relative;
+  margin: 20px 0;
+  height: 4px;
+  width: 400px;
+  background-color: grey;
+  border-radius: 40px;
+}
+
+footer .central_bar .loading_bar::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ADFF2F;
+  border-radius: 40px;
+}
+
+footer .sidebar_right {
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 300px;
+}
+
+footer .sidebar_right i {
+  font-size: 12px;
+  padding: 0;
+}
+
+footer .sidebar_right .volume_bar {
+  position: relative;
+  margin: auto 0;
+  height: 4px;
+  width: 150px;
+  background-color: grey;
+  border-radius: 40px;
+}
+
+footer .sidebar_right .volume_bar::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ADFF2F;
+  border-radius: 40px;
 }
 
 #recent_played {
@@ -246,8 +413,8 @@ footer {
   z-index: 1;
   margin: 10px 10px;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   text-align: center;
 }
 
@@ -268,8 +435,8 @@ footer {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 100px !important;
-  width: 100px !important;
+  height: 130px !important;
+  width: 130px !important;
 }
 
 #recent_played .hover:hover {
@@ -294,17 +461,17 @@ footer {
 
 #recent_played img {
   height: auto;
-  width: 100px;
+  width: 130px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 #recent_played .img_title {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 #recent_played .txt_description {
-  font-size: 12px;
+  font-size: 9px;
 }
 
 #site_content {
@@ -381,8 +548,8 @@ footer {
 
 #created_for .item {
   z-index: 1;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   margin: 10px 10px;
   position: relative;
   text-align: center;
@@ -405,8 +572,8 @@ footer {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 100px !important;
-  width: 100px !important;
+  height: 130px !important;
+  width: 130px !important;
 }
 
 #created_for .hover:hover {
@@ -431,7 +598,7 @@ footer {
 
 #created_for img {
   height: auto;
-  width: 100px;
+  width: 130px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -446,16 +613,16 @@ footer {
 }
 
 #popular .item {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   margin: 10px 10px;
   position: relative;
   text-align: center;
 }
 
 #popular img {
-  height: 100px;
-  width: auto;
+  height: auto;
+  width: 130px;
   border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

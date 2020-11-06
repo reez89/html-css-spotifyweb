@@ -7,8 +7,8 @@
         z-index: 1;
         margin: 10px 10px;
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
         text-align: center;
         &:hover img{    
             border-radius: 20%;
@@ -26,8 +26,8 @@
         opacity: 0;
         transition: all 0.5s ease-in-out;
         background-color: rgba(0, 0, 0, 0.7);
-        height: 100px !important;
-        width: 100px !important;
+        height: 130px !important;
+        width: 130px !important;
         &:hover{
             opacity: 1;
             border-radius: 20%;
@@ -49,14 +49,14 @@
     }
     img{
         height: auto;
-        width: 100px;
+        width: 130px;
         transition: all 0.5s ease-in-out;
     }
     .img_title {
-        padding: 10px ;
+        padding: 10px 0;
     }
     .txt_description{
-        font-size: 12px;
+        font-size: 9px;
     }
 
     

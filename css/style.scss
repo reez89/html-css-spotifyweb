@@ -7,11 +7,15 @@
 body {
     color: white;
     font-family: 'Roboto', sans-serif;
+    p{
+        color: #7C7E83;
+    }
 }
 
 .d-flex {
     display: flex;
 }
+
 
 @import './aside';
 @import './navigation-links';

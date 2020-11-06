@@ -4,8 +4,8 @@
     padding-left: 20px;
     .item {
         z-index: 1;
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
         margin: 10px 10px;
         position: relative;
         text-align: center;
@@ -26,8 +26,8 @@
         opacity: 0;
         transition: all 0.5s ease-in-out;
         background-color: rgba(0, 0, 0, 0.7);
-        height: 100px !important;
-        width: 100px !important;
+        height: 130px !important;
+        width: 130px !important;
 
         &:hover {
             opacity: 1;
@@ -51,7 +51,7 @@
 
     img {
         height: auto;
-        width: 100px;
+        width: 130px;
         transition: all 0.5s ease-in-out;
     }
 }
