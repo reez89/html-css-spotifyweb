@@ -1,22 +1,20 @@
 #recent_played {
-    z-index: 1;
+    display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
 
     .item {
-        z-index: 0;
-        margin: 10px 10px;
         position: relative;
+        margin: 10px 10px;
         width: 130px;
         height: 130px;
         text-align: center;
-        overflow: hidden;
         transition: all 0.5s ease-in-out;
-        &:hover{    
+        &:hover img{    
             border-radius: 20%;
-            transform: scale(1.5);
+            transform: scale(1.2);
             box-shadow: 0 25px 40px rgba(0,0,0,.5);
-            z-index: 1;
+            cursor: pointer;
             
         }
     }
@@ -29,14 +27,16 @@
         transition: all 0.5s ease-in-out;
         background-color: rgba(0, 0, 0, 0.7);
         height: 130px !important;
-        width: 130px !important;
-        &:hover{
-            opacity: 1;
+        width: 130px     !important;
+        &:hover {
             border-radius: 20%;
+            transform: scale(1.2);
+            box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+            z-index: 1;
+            opacity: 1;
             cursor: pointer;
-            transform: scale(1.5);
-            z-index: 2;
         }
+        
     }
 
     .play_btn{
@@ -60,7 +60,5 @@
     .txt_description{
         font-size: 9px;
     }
-
-    
-
 }
+

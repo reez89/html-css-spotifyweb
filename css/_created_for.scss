@@ -12,9 +12,9 @@
 
         &:hover img {
             border-radius: 20%;
-            transform: scale(1.5);
+            transform: scale(1.2);
             box-shadow: 0 10px 20px black;
-            z-index: 0;
+            cursor: pointer;
 
         }
     }
@@ -33,7 +33,7 @@
             opacity: 1;
             border-radius: 20%;
             cursor: pointer;
-            transform: scale(1.5);
+            transform: scale(1.2);
             z-index: 2;
         }
     }

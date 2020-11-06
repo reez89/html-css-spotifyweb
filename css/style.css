@@ -429,31 +429,31 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
 }
 
 #recent_played {
-  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 20px;
 }
 
 #recent_played .item {
-  z-index: 0;
-  margin: 10px 10px;
   position: relative;
+  margin: 10px 10px;
   width: 130px;
   height: 130px;
   text-align: center;
-  overflow: hidden;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-#recent_played .item:hover {
+#recent_played .item:hover img {
   border-radius: 20%;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
           box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  cursor: pointer;
 }
 
 #recent_played .hover {
@@ -465,16 +465,18 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   transition: all 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.7);
   height: 130px !important;
-  width: 130px !important;
+  width: 130px     !important;
 }
 
 #recent_played .hover:hover {
-  opacity: 1;
   border-radius: 20%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 1;
   cursor: pointer;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  z-index: 2;
 }
 
 #recent_played .play_btn {
@@ -586,11 +588,11 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
 
 #created_for .item:hover img {
   border-radius: 20%;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-box-shadow: 0 10px 20px black;
           box-shadow: 0 10px 20px black;
-  z-index: 0;
+  cursor: pointer;
 }
 
 #created_for .hover {
@@ -609,8 +611,8 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   opacity: 1;
   border-radius: 20%;
   cursor: pointer;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   z-index: 2;
 }
 
