@@ -3,4 +3,14 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #141922;
+    .created_for_titles {
+        padding: 90px 0 10px 30px;
+    }
+    .created_for_txt {
+        font-size: 10px;
+        padding: 10px 0 10px 0px;
+    }
+    .created_for_titles_bottom{
+        padding: 30px 0 10px 30px;
+    }
 }

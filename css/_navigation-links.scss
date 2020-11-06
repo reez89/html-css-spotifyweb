@@ -1,12 +1,4 @@
-#site_content {
-    .covers_section{
-        padding-top: 60px;
-        padding: 20px;
-        background-color: #141922;
-        overflow-y: auto;
-        overflow-x: hidden;
-        width: calc(100% - 300px);
-    }
+
     .links{
         display: inline-block;
     }
@@ -39,8 +31,5 @@
             text-transform: uppercase;
         }
     }
-    .recently_played_txt{
-        padding: 15px 0;
-    }
+    
 
-}
