@@ -71,8 +71,19 @@ footer {
                 height: 4px;
                 background-color: #ADFF2F;
                 border-radius: 40px;
-  
             }
+            .circle_volume_player {
+                position: absolute;
+                bottom: -5px;
+                left: 45px;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
         }
     }
 
@@ -101,7 +112,16 @@ footer {
               height: 4px;
               background-color: #ADFF2F;
               border-radius: 40px;
-
+          }
+          .circle_volume{
+                position: absolute;
+                bottom:-4px;
+                left: 45px;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    opacity: 1;
+                }
           }
       }
     }

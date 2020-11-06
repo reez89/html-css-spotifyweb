@@ -4,17 +4,19 @@
     padding-left: 20px;
 
     .item {
-        z-index: 1;
+        z-index: 0;
         margin: 10px 10px;
         position: relative;
         width: 130px;
         height: 130px;
         text-align: center;
-        &:hover img{    
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        &:hover{    
             border-radius: 20%;
             transform: scale(1.5);
-            box-shadow: 0 10px 20px black;
-            z-index: 0;
+            box-shadow: 0 25px 40px rgba(0,0,0,.5);
+            z-index: 1;
             
         }
     }
