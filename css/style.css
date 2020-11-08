@@ -22,7 +22,7 @@ body p {
 
 aside.main_menu {
   background-color: black;
-  min-width: 300px;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,6 +210,73 @@ aside.main_menu .john_doe img {
   border-radius: 50%;
 }
 
+@media all and (min-width: 375px) {
+  .logo_spotify .small_view {
+    display: none;
+  }
+}
+
+@media all and (max-width: 375px) {
+  aside.main_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 30px;
+  }
+  aside.main_menu .search .search_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside.main_menu .search .search_item a {
+    display: none;
+  }
+  aside.main_menu .group_middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .logo_spotify img {
+    display: none;
+  }
+  aside.main_menu .logo_spotify {
+    padding-left: 0;
+  }
+  .playlist {
+    display: none;
+  }
+  .logo_spotify .small_view {
+    display: block;
+    margin: 0 auto;
+  }
+  aside.main_menu .installa_app .john_doe a {
+    display: none;
+  }
+  aside.main_menu .installa_app .john_doe {
+    margin: 0 auto;
+    padding: 0 0;
+  }
+  aside.main_menu .installa_app .hr_style {
+    display: none;
+  }
+  aside.main_menu .installa_app .installa a {
+    display: none;
+  }
+  aside.main_menu .installa {
+    margin: 0 auto;
+    padding: 0 0;
+  }
+}
+
 .links {
   display: inline-block;
 }
@@ -275,7 +342,7 @@ footer .player .sidebar_left {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 10px;
-  width: 300px;
+  width: 30%;
 }
 
 footer .player .sidebar_left img {
@@ -323,6 +390,7 @@ footer .central_bar {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  width: 40%;
 }
 
 footer .central_bar .icons_player {
@@ -348,9 +416,10 @@ footer .central_bar .icons_player .play_btn {
 
 footer .central_bar .loading_bar {
   position: relative;
+  text-align: center;
   margin: 20px 0;
   height: 4px;
-  width: 400px;
+  width: 50%;
   background-color: grey;
   border-radius: 40px;
 }
@@ -360,7 +429,7 @@ footer .central_bar .loading_bar::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50px;
+  width: 20%;
   height: 4px;
   background-color: #ADFF2F;
   border-radius: 40px;
@@ -381,6 +450,7 @@ footer .central_bar .loading_bar .circle_volume_player:hover {
 
 footer .sidebar_right {
   margin: auto 0;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,7 +469,7 @@ footer .sidebar_right .volume_bar {
   position: relative;
   margin: auto 0;
   height: 4px;
-  width: 150px;
+  width: 20%;
   background-color: grey;
   border-radius: 40px;
 }
@@ -409,7 +479,7 @@ footer .sidebar_right .volume_bar::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50px;
+  width: 10%;
   height: 4px;
   background-color: #ADFF2F;
   border-radius: 40px;
@@ -432,8 +502,6 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding-left: 20px;
 }
 
@@ -505,6 +573,22 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   font-size: 9px;
 }
 
+@media all and (max-width: 769px) {
+  #recent_played {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #recent_played img.special {
+    margin-top: 70px;
+  }
+}
+
+@media all and (max-width: 745px) {
+  #recent_played img.special_ {
+    margin-top: 70px;
+  }
+}
+
 #site_content {
   height: calc(100% - 60px);
 }
@@ -514,7 +598,7 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   background-color: #141922;
   overflow-y: auto;
   overflow-x: hidden;
-  width: calc(100% - 300px);
+  width: 100%;
 }
 
 #site_content .covers_section .recently_played_txt {
@@ -524,7 +608,7 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
 .subscribe {
   background-color: rgba(1, 1, 1, 0.5);
   height: 60px;
-  width: calc(100% - 300px);
+  width: 81%;
   position: fixed;
   top: 0;
   right: 0;
@@ -632,6 +716,12 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   width: 130px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+@media all and (max-width: 769px) {
+  .wrapper .created_for_titles {
+    padding: 150px 0 10px 30px;
+  }
 }
 
 #popular {

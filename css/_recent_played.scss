@@ -1,6 +1,5 @@
 #recent_played {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;   
     padding-left: 20px;
 
     .item {
@@ -62,3 +61,21 @@
     }
 }
 
+@media all and (max-width: 769px) {
+    #recent_played{
+        flex-wrap: wrap;
+        img.special{
+            margin-top: 70px;
+        }
+    }
+
+}
+
+@media all and (max-width: 745px) {
+    #recent_played {
+        img.special_ {
+            margin-top: 70px;
+        }
+    }
+
+}

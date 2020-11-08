@@ -7,7 +7,7 @@
 
 aside.main_menu {
     background-color: black;
-    min-width: 300px;
+    width: 20%;
     display: flex;
     flex-direction: column;
     .main_menu{
@@ -128,4 +128,61 @@ aside.main_menu {
     }
 }
 
+@media all and(min-width: 375px){
+    .logo_spotify .small_view {
+        display: none;
+    }
+}
 
+@media all and(max-width: 375px){
+    aside.main_menu{
+        display: flex;
+        justify-content: space-between;
+        width: 30px;
+    }
+    aside.main_menu .search .search_item{
+        display: flex;
+        justify-content: center;
+    }
+    aside.main_menu .search .search_item a{
+        display: none;
+    }
+    aside.main_menu .group_middle{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo_spotify img{
+        display: none;
+    }
+    aside.main_menu .logo_spotify {
+        padding-left: 0;
+    }
+
+    .playlist{
+        display:none;
+    }
+    .logo_spotify .small_view {
+        display: block;
+        margin: 0 auto;
+    }
+
+    aside.main_menu .installa_app .john_doe a{
+        display: none;
+    } 
+    aside.main_menu .installa_app .john_doe{
+        margin: 0 auto;
+        padding: 0 0;
+    }
+
+    aside.main_menu .installa_app .hr_style{
+        display: none;
+    }
+    aside.main_menu .installa_app .installa a{
+        display: none;
+    }
+
+    aside.main_menu .installa{
+        margin: 0 auto;
+        padding: 0 0;
+    }
+}

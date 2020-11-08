@@ -10,7 +10,7 @@ footer {
         display: flex;
         justify-content: space-between;
         padding-left: 10px;
-        width: 300px;
+        width: 30%;
         img{
             display: inline;
             height: 40px;
@@ -41,6 +41,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        width: 40%;
         .icons_player{
             display: flex;
             justify-content: center;
@@ -57,9 +58,10 @@ footer {
         }
         .loading_bar{
             position: relative;
+            text-align: center;
             margin: 20px 0;
             height: 4px;
-            width: 400px;
+            width: 50%;
             background-color: grey;
             border-radius: 40px;
             &::before {
@@ -67,7 +69,7 @@ footer {
                 position: absolute;
                 bottom:0;
                 left: 0;
-                width: 50px;
+                width: 20%;
                 height: 4px;
                 background-color: #ADFF2F;
                 border-radius: 40px;
@@ -89,6 +91,7 @@ footer {
 
     .sidebar_right{
         margin: auto 0;
+        width: 30%;
         display: flex;
         justify-content: space-evenly;
         width: 300px;
@@ -100,7 +103,7 @@ footer {
           position: relative;
           margin: auto 0;
           height: 4px;
-          width: 150px;
+          width: 20%;
           background-color: grey;
           border-radius: 40px;
           &::before {
@@ -108,7 +111,7 @@ footer {
               position: absolute;
               bottom: 0;
               left: 0;
-              width: 50px;
+              width: 10%;
               height: 4px;
               background-color: #ADFF2F;
               border-radius: 40px;
