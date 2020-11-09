@@ -30,7 +30,7 @@ aside.main_menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 10;
+  z-index: 200;
 }
 
 aside.main_menu .main_menu {
@@ -549,10 +549,20 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #recent_played .hover_img {
   position: relative;
+}
+
+#recent_played .hover_img:hover img {
+  opacity: 1;
+  border-radius: 20%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 0;
 }
 
 #recent_played .hover {
@@ -563,17 +573,17 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   cursor: pointer;
 }
 
 #recent_played .hover:hover {
   opacity: 1;
-  -webkit-box-shadow: 0 20px 40px;
-          box-shadow: 0 20px 40px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  border-radius: 20%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 10;
 }
 
 #recent_played .play_btn {
@@ -632,7 +642,7 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   height: 60px;
   width: 100%;
   position: fixed;
-  z-index: 0;
+  z-index: 100;
   top: 0;
   right: 0;
 }
