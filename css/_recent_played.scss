@@ -1,56 +1,33 @@
 #recent_played {
-    display: flex;   
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 20px;
-
     .item {
         position: relative;
         margin: 10px 10px;
-        width: 130px;
-        height: 130px;
+        width: 200px;
         text-align: center;
-        transition: all 0.5s ease-in-out;
-        &:hover img{    
-            border-radius: 20%;
-            transform: scale(1.2);
-            box-shadow: 0 25px 40px rgba(0,0,0,.5);
-            cursor: pointer;
-            
+        img{
+            height: auto;
+            display: block;
+            width: 100%;
+            height: auto;
         }
-    }
-    
+    } 
     .hover{
         position: absolute;
         top: 0;
         left: 0;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-        background-color: rgba(0, 0, 0, 0.7);
-        height: 130px !important;
-        width: 130px     !important;
-        &:hover {
-            border-radius: 20%;
-            transform: scale(1.2);
-            box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
-            z-index: 1;
-            opacity: 1;
-            cursor: pointer;
-        }
-        
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
     }
-
     .play_btn{
         position: absolute;
         font-size: 30px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: all 0.5s ease-in-out;
-        
-
-    }
-    img{
-        height: auto;
-        width: 130px;
         transition: all 0.5s ease-in-out;
     }
     .img_title {
@@ -59,23 +36,4 @@
     .txt_description{
         font-size: 9px;
     }
-}
-
-@media all and (max-width: 769px) {
-    #recent_played{
-        flex-wrap: wrap;
-        img.special{
-            margin-top: 70px;
-        }
-    }
-
-}
-
-@media all and (max-width: 745px) {
-    #recent_played {
-        img.special_ {
-            margin-top: 70px;
-        }
-    }
-
 }

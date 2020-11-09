@@ -49,6 +49,7 @@ aside.main_menu {
         }
         a{
             @include linkStyle();
+            font-size: 10px;
         }
     }
     .align_center {
@@ -56,6 +57,7 @@ aside.main_menu {
         align-items: center;
         .home a{
             color: white;
+            font-size: 10px;
         }
     }
         img{
@@ -70,14 +72,15 @@ aside.main_menu {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-size: 13px;
     }
     .playlist{
         padding-top: 20px;
         padding-left: 10px;
         ul li{
-            padding: 10px 0;
+            padding: 5px 0;
             color: #A3A3A3;
-            font-size: 0.75rem;
+            font-size: 0.65rem;
         }
     }
     .plasylist_header_txt{

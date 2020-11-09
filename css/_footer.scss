@@ -1,19 +1,13 @@
 footer {
     background-color: #282828;
-    
     display: flex;
-    .player{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
     .sidebar_left{
         display: flex;
-        justify-content: space-between;
-        padding-left: 10px;
-        width: 30%;
+        padding: 0 5px;
         img{
             display: inline;
-            height: 40px;
+            height: 2em;
         }
     .side_info{
         display:flex;
@@ -35,21 +29,21 @@ footer {
         }
     }
     }
-    }
+    
 
     .central_bar{
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        width: 40%;
+        padding: 20px 40px;
         .icons_player{
             display: flex;
             justify-content: center;
             padding: 20px 0;
             margin: auto 0;
             i{
-                font-size: 20px;
-                padding:0 20px;
+                font-size: 15px;
+                padding:0 10px;
                 margin: auto 0;
             }
             .play_btn{
@@ -59,9 +53,9 @@ footer {
         .loading_bar{
             position: relative;
             text-align: center;
-            margin: 20px 0;
+            margin: 0 auto;
             height: 4px;
-            width: 50%;
+            width: 100%;
             background-color: grey;
             border-radius: 40px;
             &::before {
@@ -91,19 +85,18 @@ footer {
 
     .sidebar_right{
         margin: auto 0;
-        width: 30%;
         display: flex;
-        justify-content: space-evenly;
-        width: 300px;
+        justify-content: flex-end;
         i{
             font-size: 12px;
-            padding: 0;
+            padding: 0 5px;
         }
         .volume_bar{
           position: relative;
           margin: auto 0;
           height: 4px;
-          width: 20%;
+          width: 150px;
+          margin-right: 20px;
           background-color: grey;
           border-radius: 40px;
           &::before {
@@ -111,7 +104,7 @@ footer {
               position: absolute;
               bottom: 0;
               left: 0;
-              width: 10%;
+              width: 50px;
               height: 4px;
               background-color: #ADFF2F;
               border-radius: 40px;
@@ -128,14 +121,26 @@ footer {
           }
       }
     }
-
-
 }
+
+
 
 
 @media all and(max-width: 375px){
     footer .player .sidebar_left img{
-        height: 20px;
+        height: 10px;
+    }
+    footer .sidebar_left .side_info .side_txt h6{
+        font-size: 8px;
+    }
+    footer .sidebar_left .side_info .side_txt p {
+        font-size: 8px;
+    }
+    footer .sidebar_left .side_icons {
+        flex-direction: column;
+    }
+    footer .sidebar_left .side_icons .heart_icon{
+        padding: 0 0 ;
     }
     footer .central_bar .loading_bar {
         margin: 0 auto;
@@ -143,7 +148,6 @@ footer {
     }
     footer .central_bar .icons_player i{
         font-size: 10px;
-        padding: 0 10px;
     }
     footer .central_bar .icons_player .play_btn {
         font-size: 20px;
