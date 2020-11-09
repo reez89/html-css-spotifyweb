@@ -5,6 +5,7 @@ footer {
     .sidebar_left{
         display: flex;
         padding: 0 5px;
+        width: 25%;
         img{
             display: inline;
             height: 2em;
@@ -35,7 +36,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        padding: 20px 40px;
+        padding: 20px 10px;
+        width: 40%;
         .icons_player{
             display: flex;
             justify-content: center;
@@ -71,7 +73,7 @@ footer {
             .circle_volume_player {
                 position: absolute;
                 bottom: -5px;
-                left: 45px;
+                left: 20%;
                 opacity: 0;
                 transition: all .3s ease-in-out;
 
@@ -87,6 +89,7 @@ footer {
         margin: auto 0;
         display: flex;
         justify-content: flex-end;
+        width: 35%;
         i{
             font-size: 12px;
             padding: 0 5px;
@@ -104,7 +107,7 @@ footer {
               position: absolute;
               bottom: 0;
               left: 0;
-              width: 50px;
+              width: 50%;
               height: 4px;
               background-color: #ADFF2F;
               border-radius: 40px;
@@ -112,7 +115,7 @@ footer {
           .circle_volume{
                 position: absolute;
                 bottom:-4px;
-                left: 45px;
+                left: 45%;
                 opacity: 0;
                 transition: all .3s ease-in-out;
                 &:hover {

@@ -336,6 +336,7 @@ footer .sidebar_left {
   display: -ms-flexbox;
   display: flex;
   padding: 0 5px;
+  width: 25%;
 }
 
 footer .sidebar_left img {
@@ -383,7 +384,8 @@ footer .central_bar {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 20px 40px;
+  padding: 20px 10px;
+  width: 40%;
 }
 
 footer .central_bar .icons_player {
@@ -431,7 +433,7 @@ footer .central_bar .loading_bar::before {
 footer .central_bar .loading_bar .circle_volume_player {
   position: absolute;
   bottom: -5px;
-  left: 45px;
+  left: 20%;
   opacity: 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -449,6 +451,7 @@ footer .sidebar_right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 35%;
 }
 
 footer .sidebar_right i {
@@ -471,7 +474,7 @@ footer .sidebar_right .volume_bar::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50px;
+  width: 50%;
   height: 4px;
   background-color: #ADFF2F;
   border-radius: 40px;
@@ -480,7 +483,7 @@ footer .sidebar_right .volume_bar::before {
 footer .sidebar_right .volume_bar .circle_volume {
   position: absolute;
   bottom: -4px;
-  left: 45px;
+  left: 45%;
   opacity: 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -526,11 +529,10 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 #recent_played .item {
-  position: relative;
   margin: 10px 10px;
   width: 200px;
   text-align: center;
@@ -543,6 +545,16 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   height: auto;
 }
 
+#recent_played .hover_img {
+  position: relative;
+}
+
+#recent_played .hover_img .hover:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-radius: 20%;
+}
+
 #recent_played .hover {
   position: absolute;
   top: 0;
@@ -550,6 +562,18 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+#recent_played .hover:hover {
+  opacity: 1;
+  -webkit-box-shadow: 0 20px 40px;
+          box-shadow: 0 20px 40px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #recent_played .play_btn {
@@ -569,6 +593,22 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
 
 #recent_played .txt_description {
   font-size: 9px;
+}
+
+@media screen and (max-width: 765px) {
+  #recent_played {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #recent_played {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #site_content {
@@ -611,7 +651,9 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
 }
 
 .wrapper {
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -699,12 +741,6 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   width: 130px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-@media all and (max-width: 769px) {
-  .wrapper .created_for_titles {
-    padding: 150px 0 10px 30px;
-  }
 }
 
 #popular {
