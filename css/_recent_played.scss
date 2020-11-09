@@ -7,7 +7,6 @@
         width: 200px;
         text-align: center;
         img{
-            height: auto;
             display: block;
             width: 100%;
             height: auto;
@@ -17,10 +16,6 @@
     .hover_img {
         position: relative;
         
-    }
-    .hover_img .hover:hover {
-        transform: scale(1);
-        border-radius: 20%;
     }
     .hover{
         position: absolute;

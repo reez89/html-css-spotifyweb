@@ -15,3 +15,11 @@
         border-radius: 50%;
     }
 }
+
+
+@media screen and(max-width:320px){
+    #popular {
+        display: flex;
+        justify-content: center;
+    }
+}

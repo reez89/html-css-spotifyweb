@@ -56,3 +56,9 @@
     }
 }
 
+@media screen and (max-width:320px){
+    #created_for {
+        display: flex;
+        justify-content: center;
+    }
+}
