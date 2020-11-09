@@ -131,3 +131,21 @@ footer {
 
 
 }
+
+
+@media all and(max-width: 375px){
+    footer .player .sidebar_left img{
+        height: 20px;
+    }
+    footer .central_bar .loading_bar {
+        margin: 0 auto;
+        
+    }
+    footer .central_bar .icons_player i{
+        font-size: 10px;
+        padding: 0 10px;
+    }
+    footer .central_bar .icons_player .play_btn {
+        font-size: 20px;
+    }
+}
