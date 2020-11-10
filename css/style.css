@@ -131,7 +131,7 @@ aside.main_menu .group_middle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 aside.main_menu .playlist {
