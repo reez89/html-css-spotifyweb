@@ -80,6 +80,18 @@ footer {
                     opacity: 1;
                 }
             }
+            .minute_live{
+                position: absolute;
+                left: -30px;
+                top: -5px;
+                font-size: 12px;
+            }
+            .minute_left{
+                position: absolute;
+                font-size: 12px;
+                right: -30px;
+                bottom: -5px;
+            }
 
         }
     }
@@ -161,4 +173,27 @@ footer {
         font-size: 10px;
         padding: 0 5px;
     }
+}
+
+@media screen and(max-width:411px) {
+    footer .central_bar .icons_player i {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+    footer .sidebar_left .side_info .side_txt h6 {
+        font-size: 8px;
+    }
+
+    footer .sidebar_left .side_info .side_txt p {
+        font-size: 8px;
+    }
+
+    footer .sidebar_left .side_icons {
+        flex-direction: column;
+    }
+
+    footer .sidebar_left .side_icons .heart_icon {
+        padding: 0 0;
+    }
+    
 }

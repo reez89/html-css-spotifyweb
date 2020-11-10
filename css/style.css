@@ -22,7 +22,6 @@ body p {
 
 aside.main_menu {
   background-color: black;
-  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,6 +137,13 @@ aside.main_menu .group_middle {
 aside.main_menu .playlist {
   padding-top: 20px;
   padding-left: 10px;
+}
+
+aside.main_menu .playlist ul {
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 aside.main_menu .playlist ul li {
@@ -443,6 +449,20 @@ footer .central_bar .loading_bar .circle_volume_player:hover {
   opacity: 1;
 }
 
+footer .central_bar .loading_bar .minute_live {
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  font-size: 12px;
+}
+
+footer .central_bar .loading_bar .minute_left {
+  position: absolute;
+  font-size: 12px;
+  right: -30px;
+  bottom: -5px;
+}
+
 footer .sidebar_right {
   margin: auto 0;
   display: -webkit-box;
@@ -527,6 +547,28 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
   footer .central_bar .icons_player i {
     font-size: 10px;
     padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  footer .central_bar .icons_player i {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+  footer .sidebar_left .side_info .side_txt h6 {
+    font-size: 8px;
+  }
+  footer .sidebar_left .side_info .side_txt p {
+    font-size: 8px;
+  }
+  footer .sidebar_left .side_icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .sidebar_left .side_icons .heart_icon {
+    padding: 0 0;
   }
 }
 
@@ -619,10 +661,6 @@ footer .sidebar_right .volume_bar .circle_volume:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-#site_content {
-  height: calc(100% - 60px);
 }
 
 #site_content .covers_section {
